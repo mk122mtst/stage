@@ -29,7 +29,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 .fixed {
     z-index: 10;
     top: 0;
@@ -86,30 +85,35 @@ nav ul li {
   font-weight:700;
 }
 
-.container{
-  margin:0px auto 20px;
-  max-width: 900px;
-  display: block;
-}
 .main{
   margin:0;
   width:100%;
   text-align: center;
 }
 .main img{
-  margin:0;
+  margin:0 0 10px 0;
   width:100%;
   height: auto;
 }
 .topDate{
   font-family:'Josefin Sans';
   font-weight:400;
-  font-size: 45px;
+  font-size: 35px;
   margin:20px auto;
   text-align: center;
 }
 .topSmall{
   font-size: 25px;
+  font-weight:500;
+}
+.topBig{
+  font-size: 47px;
+}
+/*container*/
+.container{
+  margin:0px auto 20px;
+  max-width: 900px;
+  display: block;
 }
 .content{
     margin:20px 20px 0px;
@@ -129,6 +133,7 @@ nav ul li {
   width:auto;
   display: block;
 }
+/*NEWS*/
 .date{
   color: #fff;
   display: inline-block;
@@ -141,7 +146,11 @@ nav ul li {
 .text{
   margin-left: 15px;
 }
-p{
+.news p{
+  margin-bottom: 25px;
+}
+/*SCHEDULE*/
+.schedule p{
   margin-bottom: 25px;
 }
 .schedule p::before,.ticket p::before,.goods p::before{
@@ -158,10 +167,10 @@ p{
   height: auto;
 }
 
+/*TICKET*/
 .price{
   margin: 0 50px 0 0;
 }
-
 .ticketbox p::before{
   content: '▶';
   padding-right:0.2em;
@@ -177,10 +186,10 @@ p{
   margin: 0px 20px;
 }
 
+/*CAST&STAFF*/
 .caststaff{
   text-align: center;
 }
-
 .cast {
   text-align: center;
   width: 200px;
@@ -194,6 +203,8 @@ p{
     margin-top: 60px;
     width: 100%;
 }
+
+/*GOODS*/
 .goods{
   margin-bottom: 15px;
   display: block;
@@ -208,6 +219,7 @@ p{
   display: block;
 }
 
+/*Q&A*/
 .qa label::before{
   content: 'Q.';
   padding-right:0.2em;
@@ -250,6 +262,8 @@ p{
     height: auto;
     opacity: 1;
 }
+
+/*トップへ戻るボタンの設定*/
 #pagetop{
   position: fixed;
   right:20px;
@@ -265,6 +279,8 @@ p{
   text-decoration: none;
   color: #fff;
 }
+
+/*汎用フォントサイズ*/
 .fontsize14{
   font-size:14px;
 }
@@ -276,6 +292,7 @@ p{
   font-size:30px;
 }
 
+/*フッター情報*/
 .footer{
   padding: 40px 0px;
   background-color: #4B88FF;
@@ -283,7 +300,6 @@ p{
   color:#FFF;
   text-align: center;
 }
-
 .copy{
   line-height:  40px;
 }
