@@ -262,10 +262,8 @@ p{
   font-size: 27px;
   z-index: 100;
   text-align: center;
-}
-#pagetop  a{
-text-decoration: none;
-color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .fontsize14{
   font-size:14px;
