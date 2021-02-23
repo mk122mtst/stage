@@ -235,10 +235,7 @@ div{
 }
 .qa label {
     display: block;
-    line-height: auto;
     cursor :pointer;
-    border-bottom: solid 2px #4B88FF ;
-    margin-bottom: 10px;
 }
 .qa input {
     display: none;
@@ -247,6 +244,12 @@ div{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+.qa div{
+    margin: 0;
+    border-bottom: solid 2px #4B88FF ;
+    margin-bottom: 10px;
+    width:100%;
 }
 .qa li::before{
   content: 'A.';
