@@ -5,34 +5,44 @@
     <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
     <title>Fictitious STAGE</title>
     <link rel="stylesheet" href="css/stage.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/smart.css" media="screen" charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <nav>
-      <div id="menu_box">
-        <ul id="menu" class="clearfix" style="display: block;">
-          <li>
-            <a href="#news">NEWS</a>
-          </li>
-          <li>
-            <a href="#schedule">SCHEDULE</a>
-          </li>
-          <li>
-            <a href="#ticket">TICKET</a>
-          </li>
-          <li>
-            <a href="#caststaff">CAST&STAFF</a>
-          </li>
-          <li>
-            <a href="#goods">GOODS</a>
-          </li>
-          <li>
-            <a href="#qa">Q&A</a>
-          </li>
-        </ul>
+    <div id="toggle" class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu active" >
+        <div id="menu_box">
+          <nav>
+          <ul class="fixed" id="menuList">
+            <li>
+              <a href="#news">NEWS</a>
+            </li>
+            <li>
+              <a href="#schedule">SCHEDULE</a>
+            </li>
+            <li>
+              <a href="#ticket">TICKET</a>
+            </li>
+            <li>
+              <a href="#caststaff">CAST&STAFF</a>
+            </li>
+            <li>
+              <a href="#goods">GOODS</a>
+            </li>
+            <li>
+              <a href="#qa">Q&A</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+  </div>
     <div id="main" class="main">
       <img src="img/top.jpg" alt="top">
         <span class="topDate">2021.<span class="topBig">3.15</span><span class="topSmall">(月)</span><span class="topBig">-3.21</span><span class="topSmall">(日)</span></span>
@@ -198,8 +208,8 @@
                 上演時間はどれくらいですか？
               </label>
               <input type="checkbox" id="qa_bar01" class="accordion" />
-              <ul id="ans01">
-                  <li>
+              <ul style="display:none">
+                  <li class="submenu_item">
                     約120分を予定しております。（休憩なし）
                   </li>
               </ul>
@@ -207,8 +217,8 @@
                   開演に遅れていった場合、入場できますか？
               </label>
               <input type="checkbox" id="qa_bar02" class="accordion" />
-              <ul id="ans02">
-                <li>開演時間に遅れた場合もお入りいただけますが、客席にご案内できない時間帯がございます。その際は、スタッフの指示に従いご入場ください。<br/>
+              <ul style="display:none">
+                <li class="submenu_item">開演時間に遅れた場合もお入りいただけますが、客席にご案内できない時間帯がございます。その際は、スタッフの指示に従いご入場ください。<br/>
   なるべく時間に余裕をもってご来場くださいますよう、ご協力をお願いいたします。
                 </li>
               </ul>
@@ -216,23 +226,23 @@
                   チケットを紛失してしまった場合は？
               </label>
               <input type="checkbox" id="qa_bar03" class="accordion" />
-              <ul id="ans03">
-                <li>紛失・盗難などいかなる場合においても、チケットの再発行は受け付けておりません。お手元にあるチケットの日時を再度ご確認の上、ご来場ください。
+              <ul style="display:none">
+                <li class="submenu_item">紛失・盗難などいかなる場合においても、チケットの再発行は受け付けておりません。お手元にあるチケットの日時を再度ご確認の上、ご来場ください。
                 </li>
               </ul>
               <label for="qa_bar04">
                   キャスト・関係者宛てのプレゼントは受け取っていただけますか？
               </label>
               <input type="checkbox" id="qa_bar04" class="accordion" />
-              <ul id="ans04">
-                <li>新型コロナウイルス感染拡大防止対策により、出演者へのプレゼントは、お花・お手紙含め、全ての受付を中止とさせていただきます。何卒ご了承ください。
+              <ul style="display:none">
+                <li class="submenu_item">新型コロナウイルス感染拡大防止対策により、出演者へのプレゼントは、お花・お手紙含め、全ての受付を中止とさせていただきます。何卒ご了承ください。
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-  <a href="#top">
+  <a href="#main">
     <div id="pagetop">
       ▲
     </div>
